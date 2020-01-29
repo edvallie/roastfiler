@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible',content='ID=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= title
+    link(rel='stylesheet', href='css/style_1.css', id='primaryCss')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    script(src='js/jquery-3.1.1.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/cssChanger.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(class='ripped')
+    nav(class='navbar navbar-inverse')
+        div(class='navbar-header')
+            a(class='navbar-brand', href='#') Dalton Valliere
+        ul(class='nav navbar-nav')
+            li 
+                a(href='/index.html') Home
+            li
+                a(href='/aboutMe.html') About Me
+            li(class='active')
+                a(href='/tools.html') Tools
+            li
+                a(href='/dalton_valliere_resume.pdf') Resume
+            li
+                a(href='http://github.com/edvallie', target='_blank') Git
+            li
+                div(id='style1Div', class='colorPicker style1')
+            li
+                div(id='style2Div', class='colorPicker style2')
+            li
+                div(id='style3Div', class='colorPicker style3')
+            li
+                div(id='style4Div', class='colorPicker style4')
+            li
+                div(id='style5Div', class='colorPicker style5')
+    div(class='container')
+        div(id='header')
+            block header
+        div(id='content')
+            block content
